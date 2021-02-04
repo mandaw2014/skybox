@@ -21,8 +21,8 @@
 			body = document.getElementById("body");
 			scene = new THREE.Scene();
 
-			const envMap = new THREE.CubeTextureLoader().setPath(`${assetPath}skybox2_`).load([
-				'px.jpg', 'nx.jpg', 'py.jpg', 'ny.jpg', 'pz.jpg', 'nz.jpg'
+			const envMap = new THREE.CubeTextureLoader().load([
+				'barren_ft.jpg', 'barren_bk.jpg', 'barren_up.jpg', 'barren_dn.jpg', 'barren_rt.jpg', 'barren_lf.jpg'
 			]);
 			scene.background = envMap;
 			camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
